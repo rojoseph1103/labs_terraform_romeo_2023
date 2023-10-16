@@ -1,7 +1,7 @@
 resource "aws_instance" "myinstance" {
   ami           = "ami-03d294e37a4820c21"
   instance_type = "t2.small"
-  count         = 3
+  count         = 1
 }
 resource "aws_s3_bucket" "mybucket" {
   bucket = "my-tfet0000000000"
